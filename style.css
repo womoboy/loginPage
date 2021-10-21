@@ -1,0 +1,135 @@
+body, * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background-image: linear-gradient(to bottom, black, teal);
+}
+
+section .container {
+    width: 960px;
+    height: auto;
+    margin: auto;
+}
+
+.login-form {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.login-form .input-frame {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin: 10px 0;
+}
+
+.login-form input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background: none;
+    margin: 20px 0;
+    color: green;
+    font-size: 16px;
+}
+
+.login-form label {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    opacity: 0.5;
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+.login-form input:focus ~ label,
+.login-form input:valid ~ label {
+    top: 5px;
+    opacity: 1;
+}
+
+#submit-frame {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+    
+    
+}
+
+#remember-me-frame {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#remember-me-frame label {
+    padding: none;
+    margin: none;
+    position: relative;
+    opacity: 1;
+    transform: none;
+    width: 100%;
+    font-size: 16px;
+    left: -10px;
+    
+}
+#remember-me-frame input {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    width: 100%;
+    position: absolute;
+    left: 50px;
+}
+
+#login-submit-btn {
+    width: 50%;
+    background-color: rgb(75, 167, 101);
+    padding: 10px;
+    margin: 0;
+    color: white;
+}
+
+#login-submit-btn:hover {
+    background-color: rgb(99, 204, 129);
+}
+
+.not-member-frame {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.not-member-frame a {
+    text-decoration: none;
+    color: green;
+}
+
+.not-member-frame a:hover {
+    color: rgb(232, 135, 135);
+}

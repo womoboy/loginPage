@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginPage</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <section>
+        <div class="container">
+            <form class="login-form" action="login">
+                
+                <div class="input-frame">
+                    <span></span>
+                    <input type="text" required id="user-name">
+                    <label for="user-name">Email or Username</label> 
+                </div>
+                
+                <div class="input-frame">
+                    <span></span>
+                    <input type="password" required id="user-password">
+                    <label for="user-password">Password</label>
+                </div>
+                
+                <div id="submit-frame">
+                    <input type="submit" id="login-submit-btn" value="Login">
+                </div>
+                
+                <div id="remember-me-frame">
+                    <label for="login-checkbox">Remember me</label>
+                    <input id="login-checkbox" type="checkbox" name="remember-me">
+                </div>
+
+                <div class="not-member-frame">
+                    <span>Not a member? <a href="#">Sign up</a>.</span>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+</body>
+</html>
